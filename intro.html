@@ -2,22 +2,30 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/shittystyle.css">
     <script src="js/shitty.js"></script>
     <title>Shitty Place to practice JavaScript</title>
   </head>
   <body>
-    <h1>Stuffed.</h1>
+    <h1 onclick="alert('why click the heading?');" onmouseover="console.log('mouse over');">Stuffed.</h1>
     <form name="temperatureForm" onSubmit="JavaScript:hello()">
       <input class="temperature_input" type="number" name="temperature"><br>
       <input type="submit" value="Submit"><br>
     </form>
+    <!--embedded script -->
     <script>
     var celciustemp = -5;
     var ftemp = ((celciustemp * 9) / 5) + 32;
     document.write("In Fahrenheit: " + ftemp + " degrees <br>");
     document.write("In Celcius: " + celciustemp + " degrees <br>");
-
     </script>
+
+    <h2>image.</h2>
+    <img src="images/fallout1.jpg" alt="test"
+    onmouseover="this.src='images/fallout2.jpeg';"
+    onmouseout="this.src='images/fallout1.jpg';"
+    onclick="this.title='You\'ve added the title by clicking the image.';"
+    />
   </body>
 </html>
