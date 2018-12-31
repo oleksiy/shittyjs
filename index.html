@@ -7,6 +7,17 @@
     <title>Shitty Place to practice JavaScript</title>
   </head>
   <body>
+    <h1>Stuffed.</h1>
+    <form name="temperatureForm" onSubmit="JavaScript:hello()">
+      <input class="temperature_input" type="number" name="temperature"><br>
+      <input type="submit" value="Submit"><br>
+    </form>
+    <script>
+    var celciustemp = -5;
+    var ftemp = ((celciustemp * 9) / 5) + 32;
+    document.write("In Fahrenheit: " + ftemp + " degrees <br>");
+    document.write("In Celcius: " + celciustemp + " degrees <br>");
 
+    </script>
   </body>
 </html>
