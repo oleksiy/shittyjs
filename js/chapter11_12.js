@@ -43,12 +43,25 @@ window.onload = () => {
             super(make, model);
             this.type = type;
         }
+
+        get type(){
+            return this._type;
+        }
+
+        set type(ty){
+            this._type = ty;
+        }
+
+        //override toString
+        toString(){
+            return `Object you're looking at is a ${this.type}: ${this.model} and it's manufactured by ${this.make} `;
+        }
     }
 
 
     let x = new Truck(undefined, "Toyota", "Tacoma");
 
 
-    console.log(x);
+    console.log(x.toString());
     console.log(x.make + " " + x.model);
 };
