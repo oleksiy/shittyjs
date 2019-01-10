@@ -61,7 +61,8 @@ window.onload = () => {
 
     let x = new Truck(undefined, "Toyota", "Tacoma");
 
-
+    x.setMake("Ford");
+    x.setModel("F-250");
     console.log(x.toString());
     console.log(x.make + " " + x.model);
 };
