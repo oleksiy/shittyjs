@@ -136,4 +136,8 @@ window.onload = () => {
 
 
     console.log(`Button's parent node is ${button.parentNode.nodeType}`);
+
+    setInterval(()=>{
+        document.getElementById("video").style.visibility = "hidden";
+    }, 5000);
 }
