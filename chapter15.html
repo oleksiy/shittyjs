@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/chapter15.css"/>
     <script src="js/chapter15.js"></script>
     <title>Chapter 15</title>
 </head>
@@ -42,13 +43,25 @@
     <em>Stuff can be stored under summary.</em>
 </details>
 
-<video id="video_00" width="800" height="600" autoplay="autoplay" loop="loop">
+<video id="video_00" width="800" height="600" autoplay loop="true" poster="favicon.ico">
     <source src="videos/traffic.mp4" type="video/mp4" />
     <p>Video is not supported</p>
 </video>
 
+<hr>
+
+<audio autoplay loop controls="controls">
+    <source src="audio/porcelain.mp3" type="audio/mp3"/>
+    <p>Sorry, Audio tag is unsupported in this browser.</p>
+</audio>
+
+<canvas id="canvas_00" width="500" height="500">
+    <p>Canvas unsupported on your browser</p>
+</canvas>
+
 <footer id="footer_00">
     <p>This is a page Footer</p>
+    <p id="currentTimePlayback"></p>
 </footer>
 </body>
 </html>
