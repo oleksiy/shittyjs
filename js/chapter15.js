@@ -129,4 +129,33 @@ window.onload = () => {
     drop.ondragover = allowDrop;
     drop.ondrop = dropAction;
 
+
+    console.log("LOCAL STORAGE = > : " + typeof(Storage));
+    localStorage.setItem("name", "Heisenber Who Is Uncertain");
+    sessionStorage.setItem("favorite_channel", "57");
+    console.log("Local Storage: " + localStorage.getItem("name"));
+    console.log("Session Storage: " + JSON.stringify(sessionStorage["favorite_channel"]));
+
+
+    /*
+    Local File Storage
+     */
+
+    function dropFile(e){
+        let files = e.dataTransfer.files;
+        for (let i =0; i < files.length; i++) {
+            let f = files[i];
+            let paragraphNode = document.createElement("p");
+            let textNode = document.createTextNode(`${f.name} - Type: ${f.type} --> ${f.size} bytes.`);
+            paragraphNode.appendChild(textNode);
+            e.target.appendChild(paragraphNode);
+        }
+        e.preventDefault();
+    }
+
+    let fileDropDiv = document.getElementById("local_files_demo");
+    fileDropDiv.ondragover = allowDrop;
+    fileDropDiv.ondrop = dropFile;
+
+
 };

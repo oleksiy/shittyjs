@@ -12,3 +12,10 @@ img {
     height: 800px;
     background-color:green;
 }
+
+#local_files_demo {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    color: greenyellow;
+}
