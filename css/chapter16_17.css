@@ -9,4 +9,39 @@
 
 body {
     font-family: 'px437_ibm_vga9regular';
+    padding: 2em; /*pads content all around by 1 em*/
+    background-color: #00009b;
+    border-color: #b5bbde;
+    border-style: double;
+    border-width: 10px;
+    color:#b5bbde;
+}
+
+.modified {
+    color: red;
+}
+
+h1 {
+    padding: 1em;
+    text-shadow: 15px 25px 10px #ff4b05;
+    width: fit-content;
+    margin:auto;
+}
+
+p{
+    color:cyan;
+    background-color: black;
+}
+
+input {
+    font-family: 'px437_ibm_vga9regular', Consolas;
+    font-size: 1em;
+    width:20em;
+}
+
+button {
+    font-family: 'px437_ibm_vga9regular', Consolas;
+    background-color: white;
+    font-size:1em;
+
 }
