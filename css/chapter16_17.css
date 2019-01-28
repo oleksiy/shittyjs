@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'px437_ibm_vga9regular';
+    src: url('optimized_fonts/px437_ibm_vga9-webfont.woff2') format('woff2'),
+    url('optimized_fonts/px437_ibm_vga9-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'px437_ibm_vga9regular';
+}
