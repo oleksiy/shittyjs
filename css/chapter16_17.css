@@ -41,6 +41,45 @@ input {
 
 button {
     font-family: 'px437_ibm_vga9regular', Consolas;
-    background-color: #00b3ff;
+    background-color: #00beff;
     font-size:1em;
+    border-style: double;
+    border-width: 0.2em;
+    text-align: center;
+    transition: all 0.5s;
+    cursor:pointer;
+    margin: 5px;
+    width:10em;
+}
+
+button p::first-letter{
+    color: black;
+    background-color: grey;
+}
+
+button p {
+    background-color: transparent;
+    color:black;
+    cursor:pointer;
+    position:relative;
+    transition:1.5s;
+
+}
+
+button p:after {
+    content:'>>';
+    position: absolute;
+    opacity:0;
+    top:0;
+    right: -10px;
+    transition: 0.5s;
+}
+
+button:hover p {
+    padding-right: 25px;
+}
+
+button:hover p:after {
+    opacity:1;
+    right:0;
 }
