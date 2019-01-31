@@ -45,8 +45,15 @@ window.onload = () =>{
      */
 
     let button = document.getElementById("submit_button");
+    let buttons = document.getElementsByTagName("button");
     let body = document.getElementsByTagName("body");
 
+    function addEventListeners(arrayOfElemenets,handler) {
+        console.log(arrayOfElemenets);
+        for(let i = 0; i < arrayOfElemenets.length; i++) {
+            arrayOfElemenets[i].addEventListener("click", handler);
+        }
+    }
 
     function playClickSound(e){
         if(e.type === 'click' || e.key === 'Enter'){
@@ -54,6 +61,9 @@ window.onload = () =>{
         }
     }
 
-    button.addEventListener("click",playClickSound);
+    //button.addEventListener("click",playClickSound);
+    addEventListeners(buttons, playClickSound);
+
     body[0].addEventListener("keydown", playClickSound);
+
 };
