@@ -83,3 +83,90 @@ button:hover p:after {
     opacity:1;
     right:0;
 }
+
+#div_background_css {
+    width:1000px;
+    height:1000px;
+    background-color: white;
+    background-image: url("../images/firefox_wow.gif"), url("../images/fallout2.jpeg");
+    background-repeat: no-repeat;
+    background-size:100px, 100%;
+    background-position: top;
+    transition: box-shadow 0.5s ease-in;
+    box-shadow: 10px 10px 10px greenyellow;
+    transition: height 2.5s;
+    transition: background-image 0.5s ease-in-out;
+    transition: width 2.5s;
+}
+
+#div_background_css:hover {
+    height: 100px;
+    width: 100px;
+    box-shadow: 10px 10px 20px darkred;
+    background-image: url("../images/firefox_wow.gif");
+    transition-delay: 1s;
+}
+
+/** Animation Function **/
+
+@keyframes shittyAnimation {
+    from {
+        background-color: dodgerblue;
+    }
+    to {
+        background-color: green;
+    }
+}
+
+#div_background_css2 {
+    width: 500px;
+    height: 500px;
+    #background: radial-gradient(at top left, green, black);
+    background-color: green;
+    animation-name: shittyAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+}
+
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 28px 0;
+    }
+
+}
+
+#loading_bar {
+    width: 100%;
+    height: 30px;
+    border: 1px solid lawngreen;
+    border-radius: 3px;
+    background: repeating-linear-gradient(-45deg,white, white 11px, red 10px, red 20px) repeat;
+    background-size: 28px 28px;
+    animation: move 0.5s linear infinite;
+}
+
+#loading_bar2 {
+    width: 100%;
+    height: 50px;
+    background: repeating-linear-gradient(
+        to right,
+        grey,
+        grey 10px,
+        white 10px,
+        white 10px
+    );
+    animation: load 5s ease-in-out 1;
+}
+
+@keyframes load {
+    0% {
+        width: 1%;
+    }
+    100% {
+        width: 100%;
+    }
+}
