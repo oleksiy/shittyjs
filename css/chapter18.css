@@ -14,9 +14,9 @@ body{
     animation-name: slideIn;
     animation-duration: 10s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;
     position:relative;
-    display:-webkit-box;
+    display: inline-block;
 }
 
 @keyframes slideIn {
